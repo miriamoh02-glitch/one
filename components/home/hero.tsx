@@ -43,15 +43,6 @@ export function Hero() {
         <div className="mx-auto w-full max-w-[1600px] px-6 md:px-12 lg:px-20">
           <div className="grid items-center gap-16 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-7">
-              <motion.p
-                className="mb-6 text-xs uppercase tracking-[0.4em] text-white/90"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                Gold Coast Estates
-              </motion.p>
-
               <motion.h1
                 className="font-display text-balance text-4xl font-normal leading-[1.1] tracking-tight text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)] sm:text-5xl md:text-6xl lg:text-7xl"
                 initial={{ opacity: 0, y: 40 }}
@@ -80,14 +71,6 @@ export function Hero() {
               >
                 <Button variant="accent" size="lg" asChild>
                   <Link href="#about">About Us</Link>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-white/40 text-white hover:border-accent hover:text-accent"
-                  asChild
-                >
-                  <Link href="/contact">Contact</Link>
                 </Button>
               </motion.div>
             </div>
