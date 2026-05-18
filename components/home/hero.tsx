@@ -44,7 +44,7 @@ export function Hero() {
           <div className="grid items-center gap-16 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-7">
               <motion.p
-                className="mb-6 text-xs uppercase tracking-[0.4em] text-background/90 drop-shadow-sm"
+                className="mb-6 text-xs uppercase tracking-[0.4em] text-white/90"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -53,7 +53,7 @@ export function Hero() {
               </motion.p>
 
               <motion.h1
-                className="heading-display text-balance text-4xl leading-[1.1] text-background drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-5xl md:text-6xl lg:text-7xl"
+                className="font-display text-balance text-4xl font-normal leading-[1.1] tracking-tight text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)] sm:text-5xl md:text-6xl lg:text-7xl"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
@@ -62,7 +62,7 @@ export function Hero() {
               </motion.h1>
 
               <motion.p
-                className="mt-8 max-w-xl text-base leading-relaxed text-background/95 drop-shadow-[0_1px_12px_rgba(0,0,0,0.35)] md:text-lg"
+                className="mt-8 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.55 }}
@@ -84,7 +84,7 @@ export function Hero() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-background/30 text-background hover:border-accent hover:text-accent"
+                  className="border-white/40 text-white hover:border-accent hover:text-accent"
                   asChild
                 >
                   <Link href="/contact">Contact</Link>
