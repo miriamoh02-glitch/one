@@ -101,9 +101,9 @@ export const footerOffices = [
     phone: "+233 30 278 9400",
   },
   {
-    city: "Lagos",
-    address: "22 Adeola Odeku Street, Victoria Island",
-    phone: "+234 1 460 8200",
+    city: "Kumasi",
+    address: "12 Harper Road, Adum",
+    phone: "+233 32 201 8450",
   },
 ];
 

@@ -31,8 +31,9 @@ export function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-primary/30 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-primary/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/75 via-primary/50 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/45 to-primary/20" />
       </motion.div>
 
       <motion.div
@@ -43,7 +44,7 @@ export function Hero() {
           <div className="grid items-center gap-16 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-7">
               <motion.p
-                className="mb-6 text-xs uppercase tracking-[0.4em] text-background/70"
+                className="mb-6 text-xs uppercase tracking-[0.4em] text-background/90 drop-shadow-sm"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -52,7 +53,7 @@ export function Hero() {
               </motion.p>
 
               <motion.h1
-                className="heading-display text-balance text-4xl leading-[1.1] text-background sm:text-5xl md:text-6xl lg:text-7xl"
+                className="heading-display text-balance text-4xl leading-[1.1] text-background drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-5xl md:text-6xl lg:text-7xl"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
@@ -61,13 +62,13 @@ export function Hero() {
               </motion.h1>
 
               <motion.p
-                className="mt-8 max-w-xl text-base leading-relaxed text-background/80 md:text-lg"
+                className="mt-8 max-w-xl text-base leading-relaxed text-background/95 drop-shadow-[0_1px_12px_rgba(0,0,0,0.35)] md:text-lg"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.55 }}
               >
                 We are a privately held advisory firm with deep roots in Accra
-                and Lagos. Our work is defined by discretion, market expertise,
+                and Kumasi. Our work is defined by discretion, market expertise,
                 and a long-standing commitment to exceptional client service.
               </motion.p>
 
@@ -97,13 +98,13 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.9 }}
             >
-              <div className="space-y-4 border-l border-background/20 pl-8">
+              <div className="space-y-4 border-l border-background/40 pl-8">
                 {trustMetrics.slice(0, 3).map((stat) => (
                   <div key={stat.label} className="py-4">
-                    <p className="font-display text-4xl text-background">
+                    <p className="font-display text-4xl text-background drop-shadow-[0_2px_16px_rgba(0,0,0,0.4)]">
                       {stat.value}
                     </p>
-                    <p className="mt-1 text-sm text-background/60">
+                    <p className="mt-1 text-sm font-medium text-background/85">
                       {stat.label}
                     </p>
                   </div>

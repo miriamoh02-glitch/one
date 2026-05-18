@@ -5,7 +5,7 @@ const siteUrl = "https://goldcoastestates.com";
 export const siteConfig = {
   name: "Gold Coast Estates",
   description:
-    "Gold Coast Estates is a luxury real estate advisory firm based in Accra and Lagos, serving clients across West Africa since 2007.",
+    "Gold Coast Estates is a luxury real estate advisory firm based in Accra and Kumasi, serving clients across West Africa since 2007.",
   url: siteUrl,
 };
 
@@ -86,5 +86,5 @@ export const localBusinessJsonLd = {
     },
   ],
   priceRange: "$$$$",
-  areaServed: ["Accra", "Lagos", "West Africa"],
+  areaServed: ["Accra", "Kumasi", "West Africa"],
 };

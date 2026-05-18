@@ -26,7 +26,7 @@ export function Footer() {
             </Link>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-background/60">
               A premier luxury real estate advisory firm with offices in Accra
-              and Lagos, serving clients across West Africa since 2007.
+              and Kumasi, serving clients across West Africa since 2007.
             </p>
             <div className="mt-8 flex gap-6">
               {socialLinks.map((link) => (

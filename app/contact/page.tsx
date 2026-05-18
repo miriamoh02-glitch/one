@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { ContactHero } from "@/components/contact/contact-hero";
 import { ContactMethods } from "@/components/contact/contact-methods";
 import { InquiryForm } from "@/components/contact/inquiry-form";
-import { OfficeMap } from "@/components/contact/office-map";
 import { ConsultationCta } from "@/components/contact/consultation-cta";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Gold Coast Estates with questions about our firm, offices in Accra and Lagos, and advisory services.",
+    "Contact Gold Coast Estates with questions about our firm, offices in Accra and Kumasi, and advisory services.",
 };
 
 export default function ContactPage() {
@@ -37,7 +36,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <OfficeMap />
       <ConsultationCta />
     </>
   );

@@ -52,7 +52,7 @@ export function About() {
             <FadeIn delay={0.15}>
               <p className="mt-8 text-lg leading-relaxed text-secondary">
                 Founded in 2007, Gold Coast Estates is a privately held luxury
-                real estate advisory firm with offices in Accra and Lagos. We
+                real estate advisory firm with offices in Accra and Kumasi. We
                 serve clients who value thoughtful counsel, integrity, and
                 long-term relationships over transactional speed.
               </p>
