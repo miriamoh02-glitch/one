@@ -31,9 +31,9 @@ export function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-primary/55" />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/75 via-primary/50 to-background/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/45 to-primary/20" />
+        <div className="absolute inset-0 bg-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/35 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/65 via-primary/30 to-transparent" />
       </motion.div>
 
       <motion.div
@@ -98,13 +98,13 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.9 }}
             >
-              <div className="space-y-4 border-l border-background/40 pl-8">
+              <div className="space-y-4 border-l border-white/30 pl-8">
                 {trustMetrics.slice(0, 3).map((stat) => (
                   <div key={stat.label} className="py-4">
-                    <p className="font-display text-4xl text-background drop-shadow-[0_2px_16px_rgba(0,0,0,0.4)]">
+                    <p className="font-display text-4xl text-white">
                       {stat.value}
                     </p>
-                    <p className="mt-1 text-sm font-medium text-background/85">
+                    <p className="mt-1 text-sm font-medium text-white/80">
                       {stat.label}
                     </p>
                   </div>
@@ -114,20 +114,6 @@ export function Hero() {
           </div>
         </div>
       </motion.div>
-
-      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block">
-        <motion.div
-          className="flex flex-col items-center gap-2"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <span className="text-[10px] uppercase tracking-[0.3em] text-background/50">
-            Scroll
-          </span>
-          <motion.div className="h-12 w-px bg-background/30" />
-        </motion.div>
-      </div>
     </section>
   );
 }
-
